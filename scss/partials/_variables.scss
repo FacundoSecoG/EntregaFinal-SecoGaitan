@@ -1,0 +1,12 @@
+$redesLogo: (
+    Whatsapp: "../imgs/Whatsapp.png",
+    Instagram: "../imgs/Instagram.png",
+    Gmail: "../imgs/Gmail.png",
+);
+
+ @each $red, $logo in $redesLogo{
+    .logo-#{$red}{
+        background: url($logo);
+        background-size: contain;
+    }
+ }

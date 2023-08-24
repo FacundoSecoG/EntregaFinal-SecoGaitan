@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'OCR A Extended', sans-serif;
+}
+
+html {
+    background-color: #25282E;
+    scroll-behavior: smooth;
+    margin: auto;
+    color: #ffffff;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+span{
+    color: #00FFFF;
+}

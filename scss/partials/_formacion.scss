@@ -1,0 +1,57 @@
+.pagina{
+    .formacion-texto{
+        text-align: center;
+        h1{
+            width: 100%;
+            margin: auto;
+            font-size: calc(1.6rem + 1.4vw);
+        }
+        p{
+            width: 100%;
+            height: auto;
+            padding: 2rem;
+            font-size: 1.1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+    }
+    .formacion-skills{
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin: auto;
+        .cont-botones{
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 2rem;
+            h2{
+                width: 70%;
+                margin: auto;
+                padding: 1rem;
+            }
+            .botones-contenedor{
+                display: flex;
+                height: auto;
+                width: 100%;
+                max-width: 900px;
+                margin: auto;
+                justify-content: center;
+                .boton{
+                    width: auto;
+                    margin: 0 5px;
+                    padding: 0.5rem 0.75rem;
+                    border-radius: 0.25rem;
+                    border: 2px solid #444F68;
+                    transition: .2s;
+                    &:hover{
+                        border-color: #00FFFF;
+                        color: #00FFFF;
+                    }
+                }
+            }
+        }
+    }
+}

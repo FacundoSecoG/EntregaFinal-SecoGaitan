@@ -1,0 +1,43 @@
+footer {
+    background-color: #444F68;
+    height: 200px;
+    width: 100vw;
+    display: block;
+    position: relative;
+    border-top: 6px solid #00FFFF;
+    margin-top: 90px;
+    z-index: -1;
+    .logos-redes{
+        width: 40%;
+        min-width: 400px;
+        max-width: 550px;
+        border-radius: 200px;
+        border-top: 6px solid #00FFFF;
+        background-color:#444F68;
+        display: flex;
+        box-shadow: 0px 0px 30px #25282E;
+        justify-content: space-between;
+        padding: 45px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 0;
+        left: 50%;
+        div{
+            color: #00FFFF;
+            display: block;
+            width: 90px;
+            height: 90px;
+        }
+    }
+    p{
+        width: 70%;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+        display: block;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 60%;
+        left: 50%;
+    }
+}
