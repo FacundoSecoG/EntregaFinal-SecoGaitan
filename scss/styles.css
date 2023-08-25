@@ -495,6 +495,9 @@ footer p {
 }
 .carousel {
   position: relative;
+  max-width: 1300px;
+  margin: auto;
+  padding-bottom: 150px;
 }
 .carousel .carousel-item .carousel-content {
   position: relative;
@@ -504,6 +507,8 @@ footer p {
   height: auto;
   display: block;
   margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carousel .carousel-item .carousel-content .caption-section {
   position: absolute;
@@ -524,6 +529,7 @@ footer p {
   overflow: hidden;
   transform: translateY(10%);
   transition: transform 0.3s, background-color 0.3s;
+  max-width: 100%;
 }
 .carousel .carousel-item .carousel-content .caption-section .title {
   margin-bottom: 10px;
@@ -549,6 +555,7 @@ footer p {
   padding: 5px 10px;
   border-radius: 3px;
   z-index: 1;
+  max-width: 100px;
 }
 .carousel .slick-prev,
 .carousel .slick-next {

@@ -4,9 +4,9 @@ $redesLogo: (
     Gmail: "../imgs/Gmail.png",
 );
 
- @each $red, $logo in $redesLogo{
+@each $red, $logo in $redesLogo{
     .logo-#{$red}{
         background: url($logo);
         background-size: contain;
     }
- }
+}

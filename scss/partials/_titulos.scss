@@ -1,6 +1,8 @@
 .carousel {
     position: relative;
-
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 150px;
     .carousel-item {
         .carousel-content {
             position: relative;
@@ -10,6 +12,7 @@
                 height: auto;
                 display: block;
                 margin: 0 auto;
+                object-fit: cover;
             }
 
             .caption-section {
@@ -31,6 +34,7 @@
                 overflow: hidden;
                 transform: translateY(10%);
                 transition: transform 0.3s, background-color 0.3s;
+                max-width: 100%;
 
                 .title {
                     margin-bottom: 10px;
@@ -62,6 +66,7 @@
             padding: 5px 10px;
             border-radius: 3px;
             z-index: 1;
+            max-width: 100px;
         }
     }
 
@@ -98,3 +103,4 @@
         right: 20px;
     }
 }
+
