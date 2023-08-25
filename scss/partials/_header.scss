@@ -1,8 +1,12 @@
 header{
-    height: 150px;
-    width: 100vw;
-    margin: auto;
     background-color: #444F68;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #444F68;
+    z-index: 1000;
     nav {
         height: 150px;
         width: 100vw;
@@ -33,6 +37,17 @@ header{
                     color: #00FFFF;
                 }
                 a {
+                    &::before,
+                    &::after {
+                        content: "<";
+                        display: inline;
+                        width: 0;
+                        height: 100%;
+                        transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+                    }
+                    &::after {
+                        content: "/>";
+                    }
                     color: #fff;
                     font-size: 18px;
                     padding: 7px 13px;
@@ -40,7 +55,16 @@ header{
                     text-transform: uppercase;
                     &:hover{
                         color: #00FFFF;
-                        transition: .5s;
+                        &::before{
+                            content: "< ";
+                            display: inline;
+                            width: 20px; 
+                        }
+                        &::after {
+                            content: " />";
+                            display: inline;
+                            width: 20px;
+                        }
                     }
                 }
             }

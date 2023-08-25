@@ -2,18 +2,18 @@
 <html lang="es">
 
 <head>
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portafolio Web - Titulos</title>
         <meta name="description" content="En esta pagina encontraras los titulos que he adquirido en mi trayecto!">
-        <meta name="keywords"
-            content="titles,titulos,tecnico,programmer,secundario,secundario,universitario,cursos,coderhouse,educacionit">
+        <meta name="keywords" content="titles,titulos,tecnico,programmer,secundario,secundario,universitario,cursos,coderhouse,educacionit">
         <link rel="stylesheet" href="../scss/styles.css">
         <link rel="icon" href="../imgs/iconPagina.png">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     </head>
 </head>
 
@@ -39,7 +39,38 @@
     </header>
     <main>
         <section class="pagina">
-
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="../imgs/Titulo-desarrolloWeb.png" alt="Imagen 1">
+                        <div class="caption-section">
+                            <div class="title">Desarrollo web EducacionIT (HTML5,css3)</div>
+                            <div class="description">Duracion de 18 horas.</div>
+                        </div>
+                        <div class="counter">1/3</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="../imgs/Titulo-desarrolloWeb.png" alt="Imagen 1">
+                        <div class="caption-section">
+                            <div class="title">Desarrollo web EducacionIT (HTML5,css3)</div>
+                            <div class="description">Duracion de 18 horas.</div>
+                        </div>
+                        <div class="counter">2/3</div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="../imgs/Titulo-desarrolloWeb.png" alt="Imagen 1">
+                        <div class="caption-section">
+                            <div class="title">Desarrollo web EducacionIT (HTML5,css3)</div>
+                            <div class="description">Duracion de 18 horas.</div>
+                        </div>
+                        <div class="counter">3/3</div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -60,9 +91,38 @@
             </p>
         </div>
     </footer>
-
-    <script src="../js/carousel.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var $carousel = $('.carousel');
+    
+            $carousel.on('init', function(event, slick){
+                $carousel.find('.slick-prev').html('<i class="fas fa-chevron-left"></i>');
+                $carousel.find('.slick-next').html('<i class="fas fa-chevron-right"></i>');
+                var totalSlides = slick.slideCount;
+                $('.counter').text('1/' + totalSlides);
+            });
+    
+            $carousel.on('afterChange', function(event, slick, currentSlide){
+                var $counter = $carousel.find('.counter');
+                var currentIndex = currentSlide + 1;
+                var totalSlides = slick.slideCount;
+                $counter.text(currentIndex + '/' + totalSlides);
+            });
+    
+            $carousel.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>',
+                appendArrows: $('.counter'),
+                customPaging: function(slider, i) {
+                    return '<div class="dot"></div>'; 
+                },
+            });
+        });
+    </script>
 </body>
 
 </html>

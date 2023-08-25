@@ -2,11 +2,7 @@
     .portafolios-contenedor {
         margin-left: 20px;
     }
-    nav ul li a {
-        font-size: 16px;
-    }
     .pagina{
-        padding-top: 10%;
         padding-bottom: 100px;
     }
     .heroPresentacion{
@@ -58,9 +54,6 @@
             display: none;
         }
     }
-}
-
-@media (max-width: 960px) {
     nav{
         #check{
             &:checked~ul{
@@ -79,7 +72,7 @@
             left: -100%;
             text-align: center;
             transition: all .3s;
-            z-index: 3;
+            z-index:100;
             li {
                 width: 100%;
                 height: 30px;
@@ -111,5 +104,4 @@
             }
         }
     }
-
 }

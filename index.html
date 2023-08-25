@@ -42,10 +42,8 @@
                     <div class="contenidoPresentacionPrincipal">
                         <h2>Hola, bienvenidos/as a mi portafolio:</h2>
                         <h1>FACUNDO NICOLAS SECO GAITÁN</h1>
-                        <h3>y soy un <span>PROGRAMADOR</span></h3>
-                        <p>"actualmente me dedico a mis estudios en la carrera inicial de <span>Licenciatura en
-                                programacion</span>, me gusta investigar e innovar en los métodos que utilizo para
-                            programar"</p>
+                        <h3>y soy <span id="role">PROGRAMADOR</span></h3>
+                        <p>"actualmente me dedico a mis estudios en la carrera inicial de <span>Licenciatura en programacion</span>, me gusta investigar e innovar en los métodos que utilizo para programar"</p>
                     </div>
                     <div class="cvYRedes">
                         <div class="contenedorCvBotonDescarga">
@@ -63,9 +61,15 @@
     </main>
     <footer>
         <div class="logos-redes">
-            <a href="mailto:facusecogaitan9@gmail.com" target="_blank"><div class="logo-Gmail" alt="logo gmail"></div></a>
-            <a href="https://www.instagram.com/facusg16/?hl=es" target="_blank"><div class="logo-Instagram" alt="logo instagram"></div></a>
-            <a href="https://wa.me/5491165777465" target="_blank"><div class="logo-Whatsapp" alt="logo whatsapp"></div></a>
+            <a href="mailto:facusecogaitan9@gmail.com" target="_blank">
+                <div class="logo-Gmail" alt="logo gmail"></div>
+            </a>
+            <a href="https://www.instagram.com/facusg16/?hl=es" target="_blank">
+                <div class="logo-Instagram" alt="logo instagram"></div>
+            </a>
+            <a href="https://wa.me/5491165777465" target="_blank">
+                <div class="logo-Whatsapp" alt="logo whatsapp"></div>
+            </a>
         </div>
         <div class="copyright">
             <p>
@@ -73,6 +77,21 @@
             </p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        const roleSpan = document.getElementById("role");
+        const roles = ["ESTUDIANTE", "PROGRAMADOR", "INNOVADOR"];
+        let currentRoleIndex = 0;
+
+        function changeRole() {
+            roleSpan.textContent = roles[currentRoleIndex];
+            currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+        }
+
+        setInterval(changeRole, 4000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
