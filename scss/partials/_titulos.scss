@@ -1,8 +1,9 @@
 .carousel {
     position: relative;
-    max-width: 1300px;
-    margin: auto;
     padding-bottom: 150px;
+    max-width: 1700px;
+    margin: auto;
+    aspect-ratio: 16/9;
     .carousel-item {
         .carousel-content {
             position: relative;
