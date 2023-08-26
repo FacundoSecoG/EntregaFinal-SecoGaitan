@@ -513,18 +513,58 @@ footer p {
   margin: auto;
   aspect-ratio: 16/9;
 }
-.carousel .carousel-item .carousel-content {
+.carousel .arrow {
+  height: 60px;
+  width: 60px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  /* initially hidden */
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+}
+.carousel .arrow-left {
+  left: 10px;
+}
+.carousel .arrow-right {
+  right: 10px;
+}
+.carousel .arrow-left:hover ~ .carousel-items {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+}
+.carousel .arrow-right:hover ~ .carousel-items {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+}
+.carousel .carousel-items {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.carousel .carousel-items .carousel-item {
+  flex: 0 0 auto;
+}
+.carousel .carousel-items .carousel-item .carousel-content {
   position: relative;
 }
-.carousel .carousel-item .carousel-content img {
+.carousel .carousel-items .carousel-item .carousel-content img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.carousel .carousel-item .carousel-content .caption-section {
+.carousel .carousel-items .carousel-item .carousel-content .caption-section {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -544,22 +584,16 @@ footer p {
   transition: transform 0.3s, background-color 0.3s;
   padding: 2rem;
 }
-.carousel .carousel-item .carousel-content .caption-section .title {
+.carousel .carousel-items .carousel-item .carousel-content .caption-section .title {
   margin-bottom: 10px;
 }
-.carousel .carousel-item .carousel-content .caption-section .description {
+.carousel .carousel-items .carousel-item .carousel-content .caption-section .description {
   display: none;
   padding: 10px 20px;
   font-size: 1rem;
   transition: background-color 0.3s;
 }
-.carousel .carousel-item .carousel-content:hover .caption-section {
-  transform: translateY(0);
-}
-.carousel .carousel-item .carousel-content:hover .description {
-  display: block;
-}
-.carousel .carousel-item .counter {
+.carousel .carousel-items .carousel-item .carousel-content .counter {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -569,6 +603,10 @@ footer p {
   border-radius: 3px;
   z-index: 1;
   max-width: 100px;
+}
+
+.carousel:hover .carousel-item .carousel-content .caption-section .description {
+  display: block;
 }
 
 @media (max-width: 1150px) {
