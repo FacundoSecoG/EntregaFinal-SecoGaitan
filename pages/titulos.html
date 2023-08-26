@@ -2,19 +2,21 @@
 <html lang="es">
 
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio Web - Titulos</title>
-        <meta name="description" content="En esta pagina encontraras los titulos que he adquirido en mi trayecto!">
-        <meta name="keywords" content="titles,titulos,tecnico,programmer,secundario,secundario,universitario,cursos,coderhouse,educacionit">
-        <link rel="stylesheet" href="../scss/styles.css">
-        <link rel="icon" href="../imgs/iconPagina.png">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web - Titulos</title>
+    <meta name="description" content="En esta pagina encontraras los titulos que he adquirido en mi trayecto!">
+    <meta name="keywords"
+        content="titles,titulos,tecnico,programmer,secundario,secundario,universitario,cursos,coderhouse,educacionit">
+    <link rel="stylesheet" href="../scss/styles.css">
+    <link rel="icon" href="../imgs/iconPagina.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,6 +41,7 @@
     </header>
     <main>
         <section class="pagina">
+            <h1 class="h1-titulos">Mis <span>Titulos</span>:</h1>
             <div class="carousel">
                 <div class="carousel-item">
                     <div class="carousel-content">
@@ -52,7 +55,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-content">
-                        <img src="../imgs/Titulo-desarrolloWeb.png" alt="Imagen 1">
+                        <img src="../imgs/Titulo-desarrolloWeb.png" alt="Imagen 1er titulo">
                         <div class="caption-section">
                             <div class="title">Desarrollo web EducacionIT (HTML5,css3)</div>
                             <div class="description">Duracion de 18 horas.</div>
@@ -62,7 +65,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="carousel-content">
-                        <img src="../imgs/Titulo-desarrolloWeb.png" alt="Imagen 1">
+                        <img src="../imgs/Titulo-desarrolloWeb.png" alt="Imagen 2do titulo">
                         <div class="caption-section">
                             <div class="title">Desarrollo web EducacionIT (HTML5,css3)</div>
                             <div class="description">Duracion de 18 horas.</div>
@@ -96,33 +99,32 @@
     <script>
         $(document).ready(function () {
             var $carousel = $('.carousel');
-    
-            $carousel.on('init', function(event, slick){
-                $carousel.find('.slick-prev').html('<i class="fas fa-chevron-left"></i>');
-                $carousel.find('.slick-next').html('<i class="fas fa-chevron-right"></i>');
+
+            $carousel.on('init', function (event, slick) {
                 var totalSlides = slick.slideCount;
                 $('.counter').text('1/' + totalSlides);
             });
-    
-            $carousel.on('afterChange', function(event, slick, currentSlide){
+
+            $carousel.on('afterChange', function (event, slick, currentSlide) {
                 var $counter = $carousel.find('.counter');
                 var currentIndex = currentSlide + 1;
                 var totalSlides = slick.slideCount;
                 $counter.text(currentIndex + '/' + totalSlides);
             });
-    
+
             $carousel.slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                prevArrow: '<button type="button" class="slick-prev"></button>',
-                nextArrow: '<button type="button" class="slick-next"></button>',
-                appendArrows: $('.counter'),
-                customPaging: function(slider, i) {
-                    return '<div class="dot"></div>'; 
+                customPaging: function (slider, i) {
+                    return '<div class="dot"></div>';
                 },
+                autoplay: true, 
+                autoplaySpeed: 3000,
+                pauseOnHover: true,
             });
         });
     </script>
+
 </body>
 
 </html>

@@ -1,9 +1,21 @@
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+.pagina{
+    text-align: center;
+    .h1-titulos{
+        margin: 3rem 1rem;
+        font-size: 4rem;
+    }
+}
 .carousel {
     position: relative;
     padding-bottom: 150px;
     max-width: 1700px;
     margin: auto;
     aspect-ratio: 16/9;
+
     .carousel-item {
         .carousel-content {
             position: relative;
@@ -33,9 +45,8 @@
                 align-items: center;
                 height: auto;
                 overflow: hidden;
-                transform: translateY(10%);
                 transition: transform 0.3s, background-color 0.3s;
-                max-width: 100%;
+                padding: 2rem;
 
                 .title {
                     margin-bottom: 10px;
@@ -47,13 +58,15 @@
                     font-size: 1rem;
                     transition: background-color 0.3s;
                 }
+            }
 
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
+            &:hover {
+                .caption-section {
+                    transform: translateY(0);
+                }
 
-                    .description {
-                        display: block;
-                    }
+                .description {
+                    display: block;
                 }
             }
         }
@@ -70,38 +83,4 @@
             max-width: 100px;
         }
     }
-
-    .slick-prev,
-    .slick-next {
-        font-size: 24px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 10;
-        transition: background-color 0.3s, color 0.3s;
-
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        i {
-            background-color: transparent;
-        }
-    }
-
-    .slick-prev {
-        left: 20px;
-    }
-
-    .slick-next {
-        right: 20px;
-    }
 }
-
