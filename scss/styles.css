@@ -473,6 +473,9 @@ footer p {
 }
 .proyectos .proyecto .enlace-github:hover .logo-github {
   animation: shakeIcon 0.5s 2;
+  background-color: #00FFFF;
+  border-radius: 50%;
+  padding: 5px;
 }
 .proyectos .proyecto .enlace-github .logo-github {
   position: absolute;
@@ -509,7 +512,7 @@ footer p {
 .carousel {
   position: relative;
   padding-bottom: 150px;
-  max-width: 1700px;
+  max-width: 1400px;
   margin: auto;
   aspect-ratio: 16/9;
 }
@@ -627,7 +630,7 @@ footer p {
     height: auto;
     margin: auto;
     max-width: none;
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
   .contenidoPresentacion p {
