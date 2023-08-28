@@ -33,6 +33,9 @@
 
         &:hover {
             border-color: #00FFFF;
+            animation-name: rainbow;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
 
         .img-proyecto {

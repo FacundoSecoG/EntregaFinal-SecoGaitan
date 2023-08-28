@@ -1,80 +1,111 @@
 .pagina {
     .hero-contacto {
-        width: 100%;
-        height: 90%;
-        max-width: 1250px;
-        margin: auto;
-        .formulario-titulo {
-            font-size: calc(40px + 2vw);
-            font-weight: 600;
-            color: #00FFFF;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        form{
-            .contenedor-formulario {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                .entrada-texto {
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 50%;
-                    padding-bottom: 12px;
-                    &:nth-child(2n){
-                        justify-content: end;
-                    }
-                    input {
-                        height: 75px;
-                        background-color: #444F68;
-                        width: 98%;
-                        border-radius: 15px;
-                        border: 3px solid #00FFFF;
-                        padding: 0 10px;
-                        box-shadow: 0px 0px 15px #00FFFF;
-                    }
-                }
-                .mensaje-usuario {
-                    width: 100%;
-                    textarea {
-                        padding: 10px 10px;
-                        resize: none;
-                        border-radius: 15px;
-                        width: 100%;
-                        border: 3px solid #00FFFF;
-                        box-shadow: 0px 0px 15px #00FFFF;
-                        height: 240px;
-                        max-height: 240px;
-                        background-color: #444F68;
-                        max-width: 1250px;
-                    }
-                }
-                .div-button {
-                    display: flex;
-                    width: 180px;
-                    height: 50px;
-                    margin: auto;
-                    margin-top: 28px;
-                    margin-bottom: 28px;
-                    
-                    .boton-enviar {
-                        width: 100%;
-                        height: 100%;
-                        text-align: center;
-                        font-size: 38px;
-                        color: #25282E;
-                        border-radius: 50px;
-                        border: #00FFFF;
-                        background-color: #00FFFF;
-                        box-shadow: 0px 0px 15px #00FFFF;
-                        cursor: pointer;
-                        font-weight: 800;
-                        transition: 300ms;
-                    }
-                }
+      width: 100%;
+      height: 90%;
+      max-width: 1250px;
+      margin: auto;
+      
+      .formulario-titulo {
+        font-size: calc(40px + 2vw);
+        font-weight: 600;
+        color: #00FFFF;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+      
+      form {
+        .contenedor-formulario {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          
+          .entrada-texto {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            padding-bottom: 12px;
+            
+            &:nth-child(2n) {
+              justify-content: end;
             }
-    
+            
+            input {
+              height: 75px;
+              background-color: #444F68;
+              width: 98%;
+              border-radius: 15px;
+              border: 3px solid #00FFFF;
+              padding: 0 10px;
+              box-shadow: 0px 0px 15px #00FFFF;
+              color: white;
+              
+              &:-webkit-autofill,
+              &:-webkit-autofill:hover,
+              &:-webkit-autofill:focus,
+              &:-webkit-autofill:active {
+                -webkit-transition-delay: 9999s;
+              }
+              
+              &::placeholder {
+                color: #00FFFF;
+              }
+            }
+          }
+          
+          .mensaje-usuario {
+            width: 100%;
+            
+            textarea {
+              padding: 10px 10px;
+              resize: none;
+              border-radius: 15px;
+              width: 100%;
+              border: 3px solid #00FFFF;
+              box-shadow: 0px 0px 15px #00FFFF;
+              height: 240px;
+              max-height: 240px;
+              background-color: #444F68;
+              max-width: 1250px;
+              color: white;
+              
+              &:-webkit-autofill,
+              &:-webkit-autofill:hover,
+              &:-webkit-autofill:focus,
+              &:-webkit-autofill:active {
+                -webkit-transition-delay: 9999s;
+              }
+              
+              &::placeholder {
+                color: #00FFFF;
+              }
+            }
+          }
+          
+          .div-button {
+            display: flex;
+            width: 180px;
+            height: 50px;
+            margin: auto;
+            margin-top: 28px;
+            margin-bottom: 28px;
+            
+            .boton-enviar {
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              font-size: 38px;
+              color: #25282E;
+              border-radius: 50px;
+              border: #00FFFF;
+              background-color: #00FFFF;
+              box-shadow: 0px 0px 15px #00FFFF;
+              cursor: pointer;
+              font-weight: 800;
+              transition: 300ms;
+            }
+          }
         }
-        
+      }
     }
-}
+  }
+  

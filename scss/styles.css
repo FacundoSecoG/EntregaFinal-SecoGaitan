@@ -300,6 +300,16 @@ footer p {
   border: 3px solid #00FFFF;
   padding: 0 10px;
   box-shadow: 0px 0px 15px #00FFFF;
+  color: white;
+}
+.pagina .hero-contacto form .contenedor-formulario .entrada-texto input:-webkit-autofill, .pagina .hero-contacto form .contenedor-formulario .entrada-texto input:-webkit-autofill:hover, .pagina .hero-contacto form .contenedor-formulario .entrada-texto input:-webkit-autofill:focus, .pagina .hero-contacto form .contenedor-formulario .entrada-texto input:-webkit-autofill:active {
+  -webkit-transition-delay: 9999s;
+}
+.pagina .hero-contacto form .contenedor-formulario .entrada-texto input::-moz-placeholder {
+  color: #00FFFF;
+}
+.pagina .hero-contacto form .contenedor-formulario .entrada-texto input::placeholder {
+  color: #00FFFF;
 }
 .pagina .hero-contacto form .contenedor-formulario .mensaje-usuario {
   width: 100%;
@@ -315,6 +325,16 @@ footer p {
   max-height: 240px;
   background-color: #444F68;
   max-width: 1250px;
+  color: white;
+}
+.pagina .hero-contacto form .contenedor-formulario .mensaje-usuario textarea:-webkit-autofill, .pagina .hero-contacto form .contenedor-formulario .mensaje-usuario textarea:-webkit-autofill:hover, .pagina .hero-contacto form .contenedor-formulario .mensaje-usuario textarea:-webkit-autofill:focus, .pagina .hero-contacto form .contenedor-formulario .mensaje-usuario textarea:-webkit-autofill:active {
+  -webkit-transition-delay: 9999s;
+}
+.pagina .hero-contacto form .contenedor-formulario .mensaje-usuario textarea::-moz-placeholder {
+  color: #00FFFF;
+}
+.pagina .hero-contacto form .contenedor-formulario .mensaje-usuario textarea::placeholder {
+  color: #00FFFF;
 }
 .pagina .hero-contacto form .contenedor-formulario .div-button {
   display: flex;
@@ -433,6 +453,9 @@ footer p {
 }
 .proyectos .proyecto:hover {
   border-color: #00FFFF;
+  animation-name: rainbow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .proyectos .proyecto .img-proyecto {
   width: 100%;
