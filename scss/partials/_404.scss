@@ -1,0 +1,35 @@
+.pagina {
+    .pagina-404 {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        max-width: 1000px;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            margin-top: 5%;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #444F68;
+            color: #fff;
+            border: solid 3px #00ffff;
+            text-decoration: none;
+            border-radius: 4px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #607096;
+            }
+        }
+    }
+}
