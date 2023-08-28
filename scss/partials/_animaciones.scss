@@ -1,0 +1,48 @@
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.animated-element-right {
+    animation-name: slide-in-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animated-element-left {
+    animation-name: slide-in-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shakeIcon {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(3px);
+    }
+
+    50% {
+        transform: translateX(-3px);
+    }
+}

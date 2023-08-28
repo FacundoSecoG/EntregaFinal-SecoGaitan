@@ -99,19 +99,3 @@
     }
 }
 
-@keyframes shakeIcon {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    25%,
-    75% {
-        transform: translateX(3px);
-    }
-
-    50% {
-        transform: translateX(-3px);
-    }
-}
