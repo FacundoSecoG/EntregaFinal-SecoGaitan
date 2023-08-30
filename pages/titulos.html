@@ -123,41 +123,40 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-        $(document).ready(function () {
-            var $carousel = $(".carousel-items");
-            var captionVisible = false;
+window.onload = function () {
+    var $carousel = $(".carousel-items");
+    var captionVisible = false;
 
-            $carousel.on("init", function (event, slick) {
-                var totalSlides = slick.slideCount;
-                $(".counter").text("1/" + totalSlides);
-            });
+    $carousel.on("init", function (event, slick) {
+        var totalSlides = slick.slideCount;
+        $(".counter").text("1/" + totalSlides);
+    });
 
-            $carousel.on("afterChange", function (event, slick, currentSlide) {
-                var $counter = $carousel.find(".counter");
-                var currentIndex = currentSlide + 1;
-                var totalSlides = slick.slideCount;
-                $counter.text(currentIndex + "/" + totalSlides);
-            });
+    $carousel.on("afterChange", function (event, slick, currentSlide) {
+        var $counter = $carousel.find(".counter");
+        var currentIndex = currentSlide + 1;
+        var totalSlides = slick.slideCount;
+        $counter.text(currentIndex + "/" + totalSlides);
+    });
 
-            $carousel.slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-                pauseOnHover: true,
-                prevArrow: $(".arrow-left"),
-                nextArrow: $(".arrow-right"),
-            });
+    $carousel.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        prevArrow: $(".arrow-left"),
+        nextArrow: $(".arrow-right"),
+    });
 
-            $(".arrow-left").click(function () {
-                $carousel.slick("slickPrev");
-            });
+    $(".arrow-left").click(function () {
+        $carousel.slick("slickPrev");
+    });
 
-            $(".arrow-right").click(function () {
-                $carousel.slick("slickNext");
-            });
-
-        });
+    $(".arrow-right").click(function () {
+        $carousel.slick("slickNext");
+    });
+};
     </script>
 </body>
 
