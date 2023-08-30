@@ -8,16 +8,17 @@
 
     .h1-titulos {
         margin: 3rem 1rem;
-        font-size: 4rem;
+        font-size: calc(2rem + 2vw);
     }
 }
 
 .carousel {
     position: relative;
     padding-bottom: 150px;
+    width: 70%;
+    height: auto;
     max-width: 1400px;
     margin: auto;
-    aspect-ratio: 16/9;
 
     .arrow {
         height: 60px;

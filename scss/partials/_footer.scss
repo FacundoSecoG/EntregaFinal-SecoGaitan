@@ -41,3 +41,31 @@ footer {
         left: 50%;
     }
 }
+
+.contenedor-logo {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .contenedor-logo .contenedor-logo-texto {
+    margin-bottom: 5p;
+    visibility: hidden;
+    width: auto;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; 
+    left: 75%; 
+    margin-left: -60px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .contenedor-logo:hover .contenedor-logo-texto {
+    visibility: visible;
+    opacity: 1;
+  }

@@ -233,6 +233,34 @@ footer p {
   left: 50%;
 }
 
+.contenedor-logo {
+  position: relative;
+  display: inline-block;
+}
+
+.contenedor-logo .contenedor-logo-texto {
+  margin-bottom: 5p;
+  visibility: hidden;
+  width: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 75%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.contenedor-logo:hover .contenedor-logo-texto {
+  visibility: visible;
+  opacity: 1;
+}
+
 .pagina .presentacion {
   max-width: 1620px;
   width: 95%;
@@ -557,15 +585,16 @@ footer p {
 }
 .pagina .h1-titulos {
   margin: 3rem 1rem;
-  font-size: 4rem;
+  font-size: calc(2rem + 2vw);
 }
 
 .carousel {
   position: relative;
   padding-bottom: 150px;
+  width: 70%;
+  height: auto;
   max-width: 1400px;
   margin: auto;
-  aspect-ratio: 16/9;
 }
 .carousel .arrow {
   height: 60px;
