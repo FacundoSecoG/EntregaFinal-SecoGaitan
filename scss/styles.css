@@ -53,6 +53,18 @@ body {
   padding-top: 150px;
 }
 
+::-moz-selection {
+  background: #3c414b;
+}
+
+::selection {
+  background: #3c414b;
+}
+
+::-moz-selection {
+  background: #3c414b;
+}
+
 @keyframes slide-in-right {
   from {
     transform: translateX(100%);

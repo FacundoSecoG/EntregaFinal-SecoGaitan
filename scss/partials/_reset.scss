@@ -25,14 +25,22 @@ a {
     color: white;
 }
 
-span{
+span {
     color: #00FFFF;
 }
 
-body{
+body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     margin: 0;
     padding-top: 150px;
+}
+
+::selection {
+    background: #3c414b;
+}
+
+::-moz-selection {
+    background: #3c414b;
 }
