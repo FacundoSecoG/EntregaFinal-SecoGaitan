@@ -603,10 +603,9 @@ footer p {
 .carousel {
   position: relative;
   padding-bottom: 150px;
-  width: 70%;
-  height: auto;
   max-width: 1400px;
   margin: auto;
+  aspect-ratio: 16/9;
 }
 .carousel .arrow {
   height: 60px;
@@ -621,7 +620,6 @@ footer p {
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s;
-  /* initially hidden */
   visibility: visible;
   opacity: 1;
   position: absolute;
