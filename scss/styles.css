@@ -289,15 +289,15 @@ footer p {
 }
 .pagina .presentacion .contenidoPresentacion .contenidoPresentacionPrincipal h1 {
   margin-bottom: 20px;
-  font-size: calc(20px + 1.1vw);
+  font-size: calc(25px + 1.1vw);
 }
 .pagina .presentacion .contenidoPresentacion .contenidoPresentacionPrincipal h2 {
   margin-bottom: 20px;
-  font-size: calc(12px + 1.1vw);
+  font-size: calc(18px + 1.1vw);
 }
 .pagina .presentacion .contenidoPresentacion .contenidoPresentacionPrincipal h3 {
   margin-bottom: 20px;
-  font-size: calc(15px + 1.1vw);
+  font-size: calc(18px + 1.1vw);
 }
 .pagina .presentacion .contenidoPresentacion .contenidoPresentacionPrincipal h3 span {
   margin-bottom: 20px;
@@ -308,7 +308,7 @@ footer p {
   height: auto;
   width: 90%;
   max-width: 887px;
-  font-size: calc(10px + 1.1vw);
+  font-size: calc(15px + 1.1vw);
 }
 .pagina .presentacion .contenidoPresentacion .cvYRedes {
   max-width: 689px;
