@@ -8,7 +8,7 @@
       .formulario-titulo {
         font-size: calc(40px + 2vw);
         font-weight: 600;
-        color: #00FFFF;
+        color: $color-secundario;
         margin-bottom: 3rem;
         text-align: center;
       }
@@ -31,12 +31,12 @@
             
             input {
               height: 75px;
-              background-color: #444F68;
+              background-color: $color-principal;
               width: 98%;
               border-radius: 15px;
-              border: 3px solid #00FFFF;
+              border: 3px solid $color-secundario;
               padding: 0 10px;
-              box-shadow: 0px 0px 15px #00FFFF;
+              box-shadow: 0px 0px 15px $color-secundario;
               color: white;
               
               &:-webkit-autofill,
@@ -47,7 +47,7 @@
               }
               
               &::placeholder {
-                color: #00FFFF;
+                color: $color-secundario;
               }
             }
           }
@@ -60,11 +60,11 @@
               resize: none;
               border-radius: 15px;
               width: 100%;
-              border: 3px solid #00FFFF;
-              box-shadow: 0px 0px 15px #00FFFF;
+              border: 3px solid $color-secundario;
+              box-shadow: 0px 0px 15px $color-secundario;
               height: 240px;
               max-height: 240px;
-              background-color: #444F68;
+              background-color: $color-principal;
               max-width: 1250px;
               color: white;
               
@@ -76,7 +76,7 @@
               }
               
               &::placeholder {
-                color: #00FFFF;
+                color: $color-secundario;
               }
             }
           }
@@ -94,11 +94,11 @@
               height: auto;
               text-align: center;
               font-size: calc(16px + 0.8vw);
-              color: #25282E;
+              color: $color-fondo;
               border-radius: 50px;
-              border: #00FFFF;
-              background-color: #00FFFF;
-              box-shadow: 0px 0px 15px #00FFFF;
+              border: $color-secundario;
+              background-color: $color-secundario;
+              box-shadow: 0px 0px 15px $color-secundario;
               cursor: pointer;
               font-weight: 800;
               transition: 300ms;

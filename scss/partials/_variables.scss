@@ -1,12 +1,3 @@
-$redesLogo: (
-    Whatsapp: "../imgs/Whatsapp.png",
-    Instagram: "../imgs/Instagram.png",
-    Gmail: "../imgs/Gmail.png",
-);
-
-@each $red, $logo in $redesLogo{
-    .logo-#{$red}{
-        background: url($logo);
-        background-size: contain;
-    }
-}
+$color-principal:#444F68;
+$color-secundario: #00FFFF;
+$color-fondo:#25282E;

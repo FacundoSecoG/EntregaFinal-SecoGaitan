@@ -96,19 +96,19 @@
         <div class="logos-redes">
             <div class="contenedor-logo">
                 <a href="mailto:facusecogaitan9@gmail.com" target="_blank">
-                    <div class="logo-Gmail" alt="logo gmail"></div>
+                    <i class="fa fa-envelope"></i>
                 </a>
                 <span class="contenedor-logo-texto">Gmail</span>
             </div>
             <div class="contenedor-logo">
                 <a href="https://www.instagram.com/facusg16/?hl=es" target="_blank">
-                    <div class="logo-Instagram" alt="logo instagram"></div>
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <span class="contenedor-logo-texto">Instagram</span>
             </div>
             <div class="contenedor-logo">
                 <a href="https://wa.me/5491165777465" target="_blank">
-                    <div class="logo-Whatsapp" alt="logo whatsapp"></div>
+                    <i class="fab fa-whatsapp"></i>
                 </a>
                 <span class="contenedor-logo-texto">Whatsapp</span>
             </div>
@@ -119,44 +119,44 @@
             </p>
         </div>
     </footer>
-
+    <script src="./javascript/cambioColor.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-window.onload = function () {
-    var $carousel = $(".carousel-items");
-    var captionVisible = false;
+        window.onload = function () {
+            var $carousel = $(".carousel-items");
+            var captionVisible = false;
 
-    $carousel.on("init", function (event, slick) {
-        var totalSlides = slick.slideCount;
-        $(".counter").text("1/" + totalSlides);
-    });
+            $carousel.on("init", function (event, slick) {
+                var totalSlides = slick.slideCount;
+                $(".counter").text("1/" + totalSlides);
+            });
 
-    $carousel.on("afterChange", function (event, slick, currentSlide) {
-        var $counter = $carousel.find(".counter");
-        var currentIndex = currentSlide + 1;
-        var totalSlides = slick.slideCount;
-        $counter.text(currentIndex + "/" + totalSlides);
-    });
+            $carousel.on("afterChange", function (event, slick, currentSlide) {
+                var $counter = $carousel.find(".counter");
+                var currentIndex = currentSlide + 1;
+                var totalSlides = slick.slideCount;
+                $counter.text(currentIndex + "/" + totalSlides);
+            });
 
-    $carousel.slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnHover: true,
-        prevArrow: $(".arrow-left"),
-        nextArrow: $(".arrow-right"),
-    });
+            $carousel.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover: true,
+                prevArrow: $(".arrow-left"),
+                nextArrow: $(".arrow-right"),
+            });
 
-    $(".arrow-left").click(function () {
-        $carousel.slick("slickPrev");
-    });
+            $(".arrow-left").click(function () {
+                $carousel.slick("slickPrev");
+            });
 
-    $(".arrow-right").click(function () {
-        $carousel.slick("slickNext");
-    });
-};
+            $(".arrow-right").click(function () {
+                $carousel.slick("slickNext");
+            });
+        };
     </script>
 </body>
 

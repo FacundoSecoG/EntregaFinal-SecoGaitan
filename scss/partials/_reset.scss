@@ -8,7 +8,7 @@
 }
 
 html {
-    background-color: #25282E;
+    background-color: $color-fondo;
     scroll-behavior: smooth;
     margin: auto;
     color: #ffffff;
@@ -26,7 +26,7 @@ a {
 }
 
 span {
-    color: #00FFFF;
+    color: $color-secundario;
 }
 
 body {
