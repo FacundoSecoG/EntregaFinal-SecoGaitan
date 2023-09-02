@@ -42,7 +42,7 @@
                     <div class="contenidoPresentacionPrincipal animated-element-left">
                         <h2>Hola, bienvenidos/as a mi portafolio:</h2>
                         <h1>FACUNDO NICOLÁS SECO GAITÁN</h1>
-                        <h3>y soy <span id="role">PROGRAMADOR</span></h3>
+                        <h3>y soy <span id="role"></span><span id="cursor">_</span></h3>
                         <p>"Actualmente me dedico a mis estudios en la carrera inicial de <span>Licenciatura en
                                 programación</span>. Me gusta investigar e innovar en los métodos que utilizo para
                             programar."</p>
@@ -91,15 +91,44 @@
     </footer>
     <script>
         const roleSpan = document.getElementById("role");
+        const cursorSpan = document.getElementById("cursor");
         const roles = ["ESTUDIANTE", "PROGRAMADOR", "AUTODIDACTA"];
         let currentRoleIndex = 0;
-
-        function changeRole() {
-            roleSpan.textContent = roles[currentRoleIndex];
-            currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+        let letterIndex = 0;
+        let isDeleting = false;
+        let isCursorVisible = true;
+    
+        function typeRole() {
+            const role = roles[currentRoleIndex];
+            roleSpan.textContent = role.substring(0, letterIndex);
+            if (isDeleting) {
+                if (letterIndex === 0) {
+                    isDeleting = false;
+                    currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+                } else {
+                    letterIndex--;
+                }
+            } else {
+                if (letterIndex === role.length) {
+                    setTimeout(() => { isDeleting = true; }, 2500); 
+                } else {
+                    letterIndex++;
+                }
+            }
         }
-
-        setInterval(changeRole, 4000);
+    
+        function blinkCursor() {
+            if (isCursorVisible) {
+                cursorSpan.style.visibility = 'hidden';
+                isCursorVisible = false;
+            } else {
+                cursorSpan.style.visibility = 'visible';
+                isCursorVisible = true;
+            }
+        }
+    
+        setInterval(blinkCursor, 500);
+        setInterval(typeRole, 100);
     </script>
 </body>
 </html>
