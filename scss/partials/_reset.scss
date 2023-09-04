@@ -12,6 +12,7 @@ html {
     scroll-behavior: smooth;
     margin: auto;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 .row::after {
@@ -43,4 +44,8 @@ body {
 
 ::-moz-selection {
     background: #3c414b;
+}
+
+.con-overflow-x{
+    overflow-x: hidden !important;
 }
