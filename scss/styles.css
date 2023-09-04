@@ -177,7 +177,7 @@ header #check {
 
 main {
   max-width: 2000px;
-  height: calc(auto + 10vh);
+  height: auto;
   width: auto;
   margin: auto;
   margin-bottom: 8%;
@@ -596,7 +596,6 @@ footer p {
 
 .carousel {
   position: relative;
-  padding-bottom: 150px;
   max-width: 1400px;
   margin: auto;
   aspect-ratio: 16/9;
@@ -659,7 +658,6 @@ footer p {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
-  padding: 20px;
   box-sizing: border-box;
   font-size: 1.5rem;
   cursor: pointer;
