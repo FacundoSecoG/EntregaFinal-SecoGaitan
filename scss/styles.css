@@ -276,16 +276,16 @@ footer p {
 }
 .pagina .presentacion .contenidoPresentacion {
   height: 100%;
-  width: 70%;
+  width: 80%;
   max-width: 1000px;
 }
 .pagina .presentacion .contenidoPresentacion .contenidoPresentacionPrincipal h1 {
   margin-bottom: 20px;
-  font-size: calc(25px + 1.1vw);
+  font-size: calc(18px + 1.1vw);
 }
 .pagina .presentacion .contenidoPresentacion .contenidoPresentacionPrincipal h2 {
   margin-bottom: 20px;
-  font-size: calc(18px + 1.1vw);
+  font-size: calc(26px + 1.1vw);
 }
 .pagina .presentacion .contenidoPresentacion .contenidoPresentacionPrincipal h3 {
   margin-bottom: 20px;
