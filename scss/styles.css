@@ -193,8 +193,7 @@ footer {
   display: block;
   position: relative;
   border-top: 6px solid #00FFFF;
-  margin-top: 90px;
-  margin-top: auto;
+  margin-top: 120px;
 }
 footer .logos-redes {
   width: 40%;
@@ -823,5 +822,10 @@ footer p {
     max-width: 60px;
     max-height: 60px;
     font-size: 60px;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    margin-top: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */
