@@ -3,10 +3,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000;
     nav {
         height: 90px;
-        width: 100vw;
+        width: 100%;
         background-color: rgba($color-principal,0.98);
         border-bottom: 6px solid $color-secundario;
         position: fixed;
@@ -15,18 +15,16 @@ header{
             margin-left: 30px;
 
             .portafolio-logo {
-                height: 90px;
+                height: auto;
                 display: inline-block;
                 line-height: 90px;
             }
         }
 
         ul {
-            margin-right: 30px;
             float: right;
-            gap: 1rem;
             height: 90px;
-            margin: auto;
+            margin: 0;
             li {
                 display: inline-block;
                 line-height: 90px;
@@ -49,7 +47,7 @@ header{
                     }
                     color: #fff;
                     font-size: 18px;
-                    padding: 7px 13px;
+                    padding: 0 20px;
                     border-radius: 3px;
                     text-transform: uppercase;
                     display: flex;
@@ -58,12 +56,12 @@ header{
                         &::before{
                             content: "<";
                             display: inline-block;
-                            transform: translateX(-.5rem);
+                            transform: translateX(-.7rem);
                         }
                         &::after {
                             content: "/>";
                             display: inline-block;
-                            transform: translateX(.5rem);
+                            transform: translateX(.7rem);
                         }
                     }
                 }
