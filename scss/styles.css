@@ -36,7 +36,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   margin: 0;
-  padding-top: 150px;
+  padding-top: 75px;
 }
 
 ::-moz-selection {
@@ -102,7 +102,7 @@ header {
   z-index: 1000;
 }
 header nav {
-  height: 150px;
+  height: 90px;
   width: 100vw;
   background-color: rgba(68, 79, 104, 0.98);
   border-bottom: 6px solid #00FFFF;
@@ -113,19 +113,22 @@ header nav .portafolios-contenedor {
   margin-left: 30px;
 }
 header nav .portafolios-contenedor .portafolio-logo {
-  height: 150px;
+  height: 90px;
   display: inline-block;
-  line-height: 150px;
-  vertical-align: middle;
+  line-height: 90px;
 }
 header nav ul {
   margin-right: 30px;
   float: right;
+  gap: 1rem;
+  height: 90px;
+  margin: auto;
 }
 header nav ul li {
   display: inline-block;
-  line-height: 150px;
-  margin: 0 5px;
+  line-height: 90px;
+  height: 90px;
+  margin: 0;
 }
 header nav ul li .boton-activado {
   color: #00FFFF;
@@ -136,14 +139,14 @@ header nav ul li a {
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
+  display: flex;
 }
 header nav ul li a::before, header nav ul li a::after {
   content: "<";
   display: inline;
-  width: 20px;
-  height: 100%;
+  height: 90px;
   overflow: hidden;
-  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.1s 0.2s;
 }
 header nav ul li a::after {
   content: "/>";
@@ -152,20 +155,20 @@ header nav ul li a:hover {
   color: #00FFFF;
 }
 header nav ul li a:hover::before {
-  content: "< ";
-  display: inline;
-  width: 20px;
+  content: "<";
+  display: inline-block;
+  transform: translateX(-0.5rem);
 }
 header nav ul li a:hover::after {
-  content: " />";
-  display: inline;
-  width: 20px;
+  content: "/>";
+  display: inline-block;
+  transform: translateX(0.5rem);
 }
 header .checkbtn {
   font-size: 30px;
   color: #ffffff;
   float: right;
-  line-height: 150px;
+  line-height: 90px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
@@ -783,8 +786,8 @@ footer p {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #444F68;
-    top: 150px;
+    background-color: rgba(68, 79, 104, 0.95);
+    top: 90px;
     left: -100%;
     text-align: center;
     transition: all 0.3s;

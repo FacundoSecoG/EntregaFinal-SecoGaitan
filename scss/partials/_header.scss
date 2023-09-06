@@ -5,31 +5,33 @@ header{
     width: 100%;
     z-index: 1000;
     nav {
-        height: 150px;
+        height: 90px;
         width: 100vw;
         background-color: rgba($color-principal,0.98);
         border-bottom: 6px solid $color-secundario;
         position: fixed;
-
         .portafolios-contenedor {
             position: absolute;
             margin-left: 30px;
 
             .portafolio-logo {
-                height: 150px;
+                height: 90px;
                 display: inline-block;
-                line-height: 150px;
-                vertical-align: middle;
+                line-height: 90px;
             }
         }
 
         ul {
             margin-right: 30px;
             float: right;
+            gap: 1rem;
+            height: 90px;
+            margin: auto;
             li {
                 display: inline-block;
-                line-height: 150px;
-                margin: 0 5px;
+                line-height: 90px;
+                height: 90px;
+                margin: 0;
                 .boton-activado {
                     color: $color-secundario;
                 }
@@ -38,10 +40,9 @@ header{
                     &::after {
                         content: "<";
                         display: inline;
-                        width: 20px;
-                        height: 100%;
+                        height: 90px;
                         overflow: hidden;
-                        transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+                        transition:transform .1s .2s;
                     }
                     &::after {
                         content: "/>";
@@ -51,17 +52,18 @@ header{
                     padding: 7px 13px;
                     border-radius: 3px;
                     text-transform: uppercase;
+                    display: flex;
                     &:hover{
                         color: $color-secundario;
                         &::before{
-                            content: "< ";
-                            display: inline;
-                            width: 20px; 
+                            content: "<";
+                            display: inline-block;
+                            transform: translateX(-.5rem);
                         }
                         &::after {
-                            content: " />";
-                            display: inline;
-                            width: 20px;
+                            content: "/>";
+                            display: inline-block;
+                            transform: translateX(.5rem);
                         }
                     }
                 }
@@ -73,7 +75,7 @@ header{
         font-size: 30px;
         color: #ffffff;
         float: right;
-        line-height: 150px;
+        line-height: 90px;
         margin-right: 40px;
         cursor: pointer;
         display: none;
