@@ -10,7 +10,7 @@
 
 html {
   background-color: #25282E;
-  background-image: url("/imgs/ruido-background-img.webp");
+  background-image: "/imgs/ruido-background-img.webp";
   scroll-behavior: smooth;
   margin: auto;
   color: #ffffff;
