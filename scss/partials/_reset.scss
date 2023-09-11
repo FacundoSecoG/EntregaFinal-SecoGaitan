@@ -10,6 +10,7 @@
 html {
     background-color: $color-fondo;
     background-image: url(/imgs/ruido-background-img.webp);
+    background-size: cover;
     scroll-behavior: smooth;
     margin: auto;
     color: #ffffff;
