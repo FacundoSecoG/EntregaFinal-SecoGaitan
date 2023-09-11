@@ -9,8 +9,12 @@
 
 html {
     background-color: $color-fondo;
+<<<<<<< HEAD
     background-image: url(/imgs/ruido-background-img.webp);
     background-size: cover;
+=======
+    background-image: "/imgs/ruido-background-img.webp";
+>>>>>>> 8860198357d7b7f397821f6e397acac64fc1373f
     scroll-behavior: smooth;
     margin: auto;
     color: #ffffff;
@@ -33,10 +37,9 @@ span {
 }
 
 body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    margin: 0;
     padding-top: 75px;
 }
 
