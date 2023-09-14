@@ -10,12 +10,9 @@
 
 html {
   background-color: #25282E;
-<<<<<<< HEAD
   background-image: url(/imgs/ruido-background-img.webp);
   background-size: cover;
-=======
   background-image: "/imgs/ruido-background-img.webp";
->>>>>>> 8860198357d7b7f397821f6e397acac64fc1373f
   scroll-behavior: smooth;
   margin: auto;
   color: #ffffff;
@@ -185,12 +182,10 @@ main {
   height: auto;
   width: auto;
   margin: auto;
-  margin-bottom: 8%;
 }
 
 .pagina {
   padding-top: 10vh;
-  width: 80vw;
   max-width: 2000px;
   height: auto;
   margin: auto;
@@ -594,6 +589,20 @@ footer p {
   border: 1px solid #00FFFF;
   height: 30px;
 }
+.proyectos .proyecto .enlace-github .logo-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #00FFFF;
+  width: 30px;
+  height: 30px;
+  background-color: #25282E;
+  border-radius: 50%;
+  border: 1px solid #00FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .slick-prev,
 .slick-next {
@@ -738,9 +747,12 @@ footer p {
   background-color: #607096;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
   .portafolios-contenedor {
     margin-left: 20px;
+  }
+  .carousel {
+    max-width: 80vw;
   }
   .pagina {
     padding-bottom: 100px;

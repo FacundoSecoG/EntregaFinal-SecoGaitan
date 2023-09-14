@@ -90,12 +90,26 @@
                 top: 10px;
                 right: 10px;
                 width: 30px;
-                background-color: $color-secundario; 
-                border-radius: 50%; 
+                background-color: $color-secundario;
+                border-radius: 50%;
                 border: 1px solid $color-secundario;
                 height: 30px;
+            }
+
+            .logo-link {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: $color-secundario;
+                width: 30px;
+                height: 30px;
+                background-color: $color-fondo;
+                border-radius: 50%;
+                border: 1px solid $color-secundario;
+                display: flex;                
+                justify-content: center;      
+                align-items: center;          
             }
         }
     }
 }
-
