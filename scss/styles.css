@@ -182,10 +182,10 @@ main {
   height: auto;
   width: auto;
   margin: auto;
+  padding-top: 5%;
 }
 
 .pagina {
-  padding-top: 10vh;
   max-width: 2000px;
   height: auto;
   margin: auto;
@@ -346,7 +346,7 @@ footer p {
 }
 
 .pagina .hero-contacto {
-  width: 100%;
+  width: 90%;
   height: 90%;
   max-width: 1250px;
   margin: auto;
@@ -611,6 +611,8 @@ footer p {
 
 .pagina {
   text-align: center;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 .pagina .h1-titulos {
   margin: 3rem 1rem;
@@ -619,9 +621,8 @@ footer p {
 
 .carousel {
   position: relative;
-  max-width: 1400px;
+  max-width: 750px;
   margin: auto;
-  aspect-ratio: 16/9;
 }
 .carousel .arrow {
   height: 60px;
@@ -671,7 +672,8 @@ footer p {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .carousel .carousel-items .carousel-item .carousel-content .caption-section {
   position: absolute;
@@ -681,19 +683,16 @@ footer p {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
-  box-sizing: border-box;
-  font-size: 1.5rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
+  height: -moz-fit-content;
+  height: fit-content;
   overflow: hidden;
+  padding: calc(1rem + 0.6vw);
+  font-size: 2rem;
   transition: transform 0.3s, background-color 0.3s;
-  padding: 2rem;
-}
-.carousel .carousel-items .carousel-item .carousel-content .caption-section .title {
-  margin-bottom: 10px;
 }
 .carousel .carousel-items .carousel-item .carousel-content .caption-section .description {
   display: none;
@@ -755,7 +754,14 @@ footer p {
     max-width: 80vw;
   }
   .pagina {
-    padding-bottom: 100px;
+    padding-top: 40px;
+  }
+  .title {
+    font-size: calc(1rem + 0.7vw);
+  }
+  .description {
+    font-size: calc(0.5rem + 0.7vw) !important;
+    padding: 0 !important;
   }
   .heroPresentacion {
     height: 80%;
