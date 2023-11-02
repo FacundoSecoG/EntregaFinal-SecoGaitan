@@ -494,6 +494,7 @@ footer p {
   border: 2px solid #444F68;
   transition: 0.2s;
   margin-bottom: 2rem;
+  background-color: #444F68;
 }
 .pagina .formacion-skills .cont-botones .botones-contenedor .boton:hover {
   border-color: #00FFFF;
@@ -507,7 +508,7 @@ footer p {
   text-align: center;
 }
 .proyectos h2 {
-  font-size: 24px;
+  font-size: 35px;
   margin-bottom: 3rem;
 }
 .proyectos .proyectos-grid {
@@ -704,6 +705,17 @@ footer p {
   position: absolute;
   top: 10px;
   right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  z-index: 1;
+  max-width: 100px;
+}
+.carousel .carousel-items .carousel-item .carousel-content .linkExterno-Titulos {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 5px 10px;
