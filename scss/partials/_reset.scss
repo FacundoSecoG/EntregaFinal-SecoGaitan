@@ -24,6 +24,14 @@ html {
     display: table;
 }
 
+hr{
+    margin: auto;
+    width: 60%;
+    border: 2px solid $color-secundario;
+    max-width: 70%;
+    border-radius: 30px;
+}
+
 a {
     text-decoration: none;
     color: white;

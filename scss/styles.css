@@ -25,6 +25,14 @@ html {
   display: table;
 }
 
+hr {
+  margin: auto;
+  width: 60%;
+  border: 2px solid #00FFFF;
+  max-width: 70%;
+  border-radius: 30px;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -696,10 +704,13 @@ footer p {
   transition: transform 0.3s, background-color 0.3s;
 }
 .carousel .carousel-items .carousel-item .carousel-content .caption-section .description {
-  display: none;
   padding: 10px 20px;
   font-size: 1rem;
   transition: background-color 0.3s;
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s, transform 0.3s, max-height 0.5s;
 }
 .carousel .carousel-items .carousel-item .carousel-content .counter {
   position: absolute;
@@ -725,7 +736,9 @@ footer p {
 }
 
 .carousel:hover .carousel-item .carousel-content .caption-section .description {
-  display: block;
+  opacity: 1;
+  max-height: 100vh;
+  transform: translateY(0);
 }
 
 .pagina .pagina-404 {

@@ -89,10 +89,13 @@
                     transition: transform 0.3s, background-color 0.3s;
 
                     .description {
-                        display: none;
                         padding: 10px 20px;
                         font-size: 1rem;
                         transition: background-color 0.3s;
+                        opacity: 0;
+                        max-height: 0;
+                        transform: translateY(100%);
+                        transition: opacity 0.3s, transform 0.3s, max-height 0.5s;
                     }
                 }
 
@@ -124,5 +127,7 @@
 }
 
 .carousel:hover .carousel-item .carousel-content .caption-section .description {
-    display: block;
+    opacity: 1;
+    max-height: 100vh;
+    transform: translateY(0);
 }
